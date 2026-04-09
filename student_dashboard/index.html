@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Productivity Dashboard</title>
+  <meta
+    name="description"
+    content="A polished student productivity dashboard with task management, deadline tracking, Pomodoro focus sessions, attendance tracking, and analytics."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-card">
+        <div class="brand-mark">SP</div>
+        <div>
+          <p class="eyebrow">Student Suite</p>
+          <h1>Productivity Hub</h1>
+        </div>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary">
+        <button class="nav-link active" data-section="overview"><span>Overview</span></button>
+        <button class="nav-link" data-section="tasks"><span>Tasks</span></button>
+        <button class="nav-link" data-section="deadlines"><span>Deadlines</span></button>
+        <button class="nav-link" data-section="pomodoro"><span>Pomodoro</span></button>
+        <button class="nav-link" data-section="attendance"><span>Attendance</span></button>
+        <button class="nav-link" data-section="analytics"><span>Analytics</span></button>
+        <button class="nav-link" data-section="settings"><span>Settings</span></button>
+      </nav>
+
+      <div class="sidebar-panel">
+        <p class="panel-label">Portfolio-ready build</p>
+        <p class="sidebar-copy">
+          Built a student productivity dashboard with task management, deadline tracking, and study analytics using vanilla JS and Chart.js.
+        </p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Dashboard</p>
+          <h2 id="section-title">Overview</h2>
+        </div>
+
+        <div class="topbar-actions">
+          <div class="date-time-card">
+            <span id="current-date">Loading date...</span>
+            <strong id="current-time">00:00:00</strong>
+          </div>
+
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
+            <span class="theme-toggle-track">
+              <span class="theme-toggle-thumb"></span>
+            </span>
+            <span id="theme-label">Dark mode</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="section active" id="overview-section" data-section="overview">
+        <div class="hero-card">
+          <div>
+            <p class="eyebrow">Today’s Focus</p>
+            <h3 id="focus-title">Stay on top of your priorities.</h3>
+            <p id="focus-copy" class="muted-copy"></p>
+          </div>
+          <div class="hero-actions">
+            <button class="primary-btn" data-section-jump="tasks" type="button">Review Tasks</button>
+            <button class="secondary-btn" data-section-jump="pomodoro" type="button">Start Focus Block</button>
+          </div>
+        </div>
+
+        <div class="stats-grid" id="overview-stats"></div>
+
+        <div class="overview-grid">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Momentum</p>
+                <h3>Progress Rings</h3>
+              </div>
+            </div>
+            <div class="ring-grid" id="progress-rings"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Soonest Deliverables</p>
+                <h3>Upcoming Deadlines</h3>
+              </div>
+              <button class="text-btn" data-section-jump="deadlines" type="button">Open Section</button>
+            </div>
+            <div id="overview-deadlines"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="tasks-section" data-section="tasks">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Task Management</p>
+            <h3>Coursework Board</h3>
+          </div>
+          <button class="primary-btn" id="add-task-btn" type="button">Add Task</button>
+        </div>
+
+        <div class="filter-bar">
+          <label>
+            Subject
+            <select id="task-filter-subject"></select>
+          </label>
+          <label>
+            Priority
+            <select id="task-filter-priority">
+              <option value="all">All priorities</option>
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
+          </label>
+          <label>
+            Status
+            <select id="task-filter-status">
+              <option value="all">All statuses</option>
+              <option value="todo">To Do</option>
+              <option value="progress">In Progress</option>
+              <option value="completed">Completed</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="task-board" id="task-board"></div>
+      </section>
+
+      <section class="section" id="deadlines-section" data-section="deadlines">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Deadline Countdown</p>
+            <h3>Important Academic Dates</h3>
+          </div>
+          <button class="primary-btn" id="add-deadline-btn" type="button">Add Deadline</button>
+        </div>
+
+        <div class="deadline-list" id="deadline-list"></div>
+      </section>
+
+      <section class="section" id="pomodoro-section" data-section="pomodoro">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Deep Work</p>
+            <h3>Pomodoro Focus Timer</h3>
+          </div>
+        </div>
+
+        <div class="pomodoro-layout">
+          <article class="panel pomodoro-panel">
+            <div class="mode-switches">
+              <button class="mode-chip active" data-mode="focus" type="button">Focus</button>
+              <button class="mode-chip" data-mode="shortBreak" type="button">Short Break</button>
+              <button class="mode-chip" data-mode="longBreak" type="button">Long Break</button>
+            </div>
+
+            <div class="timer-display">
+              <span id="pomodoro-label">Focus session</span>
+              <strong id="pomodoro-time">25:00</strong>
+              <p id="pomodoro-helper" class="muted-copy">One focused block at a time.</p>
+            </div>
+
+            <div class="timer-controls">
+              <button class="primary-btn" id="pomodoro-start" type="button">Start</button>
+              <button class="secondary-btn" id="pomodoro-pause" type="button">Pause</button>
+              <button class="ghost-btn" id="pomodoro-reset" type="button">Reset</button>
+            </div>
+          </article>
+
+          <div class="pomodoro-side-grid">
+            <article class="panel">
+              <p class="eyebrow">Sessions</p>
+              <h3 id="pomodoro-session-count">0</h3>
+              <p class="muted-copy">Completed focus sessions</p>
+            </article>
+
+            <article class="panel">
+              <p class="eyebrow">Study Time</p>
+              <h3 id="pomodoro-total-hours">0 hrs</h3>
+              <p class="muted-copy">Logged this week from focus sessions</p>
+            </article>
+
+            <article class="panel">
+              <p class="eyebrow">Recommended Next Step</p>
+              <h3 id="pomodoro-next-step">Begin a focus block</h3>
+              <p class="muted-copy">The timer adapts to your saved settings.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="attendance-section" data-section="attendance">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Attendance Tracker</p>
+            <h3>Subject-wise Attendance</h3>
+          </div>
+          <button class="primary-btn" id="add-subject-btn" type="button">Add Subject</button>
+        </div>
+
+        <div class="attendance-layout">
+          <div class="attendance-list" id="attendance-list"></div>
+          <article class="panel chart-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Live View</p>
+                <h3>Attendance Chart</h3>
+              </div>
+            </div>
+            <canvas id="attendance-chart"></canvas>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="analytics-section" data-section="analytics">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Study Analytics</p>
+            <h3>Performance Snapshot</h3>
+          </div>
+        </div>
+
+        <div class="analytics-grid">
+          <article class="panel chart-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Weekly Trend</p>
+                <h3>Study Time</h3>
+              </div>
+            </div>
+            <canvas id="study-chart"></canvas>
+          </article>
+
+          <article class="panel chart-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Completion</p>
+                <h3>Task Breakdown</h3>
+              </div>
+            </div>
+            <canvas id="task-chart"></canvas>
+          </article>
+
+          <article class="panel chart-panel wide-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Attendance Health</p>
+                <h3>Subject Performance</h3>
+              </div>
+            </div>
+            <canvas id="attendance-analytics-chart"></canvas>
+          </article>
+        </div>
+
+        <div class="insight-grid" id="analytics-insights"></div>
+      </section>
+
+      <section class="section" id="settings-section" data-section="settings">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Preferences</p>
+            <h3>Dashboard Settings</h3>
+          </div>
+        </div>
+
+        <div class="settings-grid">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Pomodoro</p>
+                <h3>Timer Durations</h3>
+              </div>
+            </div>
+            <form id="settings-form" class="settings-form">
+              <label>
+                Focus minutes
+                <input id="focus-duration" type="number" min="1" max="120" required>
+              </label>
+              <label>
+                Short break minutes
+                <input id="short-break-duration" type="number" min="1" max="60" required>
+              </label>
+              <label>
+                Long break minutes
+                <input id="long-break-duration" type="number" min="1" max="90" required>
+              </label>
+              <label>
+                Attendance threshold (%)
+                <input id="attendance-threshold" type="number" min="1" max="100" required>
+              </label>
+              <button class="primary-btn" type="submit">Save Preferences</button>
+            </form>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Appearance</p>
+                <h3>Theme & Data</h3>
+              </div>
+            </div>
+
+            <div class="settings-stack">
+              <div class="setting-row">
+                <div>
+                  <h4>Dark mode-first design</h4>
+                  <p class="muted-copy">Switch between dark and light themes anytime.</p>
+                </div>
+                <button class="secondary-btn" id="theme-toggle-settings" type="button">Toggle Theme</button>
+              </div>
+
+              <div class="setting-row danger-row">
+                <div>
+                  <h4>Clear all saved data</h4>
+                  <p class="muted-copy">Remove tasks, deadlines, attendance, and analytics history.</p>
+                </div>
+                <button class="danger-btn" id="clear-data-btn" type="button">Clear Data</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal hidden" id="task-modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Task</p>
+          <h3 id="task-modal-title">Add Task</h3>
+        </div>
+        <button class="icon-btn close-modal-btn" data-close-modal="task-modal" type="button">&times;</button>
+      </div>
+
+      <form id="task-form" class="modal-form">
+        <input id="task-id" type="hidden">
+        <label>
+          Title
+          <input id="task-title" type="text" maxlength="80" required>
+        </label>
+        <label>
+          Subject / Course
+          <input id="task-subject" type="text" maxlength="60" required>
+        </label>
+        <label>
+          Priority
+          <select id="task-priority" required>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </label>
+        <label>
+          Due date
+          <input id="task-due-date" type="datetime-local" required>
+        </label>
+        <label>
+          Status
+          <select id="task-status" required>
+            <option value="todo">To Do</option>
+            <option value="progress">In Progress</option>
+            <option value="completed">Completed</option>
+          </select>
+        </label>
+        <label>
+          Notes
+          <textarea id="task-notes" rows="4" maxlength="300" placeholder="Optional notes"></textarea>
+        </label>
+
+        <div class="modal-actions">
+          <button class="secondary-btn" data-close-modal="task-modal" type="button">Cancel</button>
+          <button class="primary-btn" type="submit">Save Task</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="deadline-modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Deadline</p>
+          <h3 id="deadline-modal-title">Add Deadline</h3>
+        </div>
+        <button class="icon-btn close-modal-btn" data-close-modal="deadline-modal" type="button">&times;</button>
+      </div>
+
+      <form id="deadline-form" class="modal-form">
+        <input id="deadline-id" type="hidden">
+        <label>
+          Title
+          <input id="deadline-title" type="text" maxlength="80" required>
+        </label>
+        <label>
+          Subject
+          <input id="deadline-subject" type="text" maxlength="60" required>
+        </label>
+        <label>
+          Due date
+          <input id="deadline-due-date" type="datetime-local" required>
+        </label>
+
+        <div class="modal-actions">
+          <button class="secondary-btn" data-close-modal="deadline-modal" type="button">Cancel</button>
+          <button class="primary-btn" type="submit">Save Deadline</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="subject-modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Attendance</p>
+          <h3 id="subject-modal-title">Add Subject</h3>
+        </div>
+        <button class="icon-btn close-modal-btn" data-close-modal="subject-modal" type="button">&times;</button>
+      </div>
+
+      <form id="subject-form" class="modal-form">
+        <input id="subject-id" type="hidden">
+        <label>
+          Subject
+          <input id="subject-name" type="text" maxlength="60" required>
+        </label>
+        <label>
+          Total classes
+          <input id="subject-total" type="number" min="0" max="500" required>
+        </label>
+        <label>
+          Attended classes
+          <input id="subject-attended" type="number" min="0" max="500" required>
+        </label>
+
+        <div class="modal-actions">
+          <button class="secondary-btn" data-close-modal="subject-modal" type="button">Cancel</button>
+          <button class="primary-btn" type="submit">Save Subject</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-stack" id="toast-stack" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
