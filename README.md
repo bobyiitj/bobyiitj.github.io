@@ -1,151 +1,99 @@
 <!-- edit this: replace YOUR_GITHUB_USERNAME everywhere below -->
-<!-- edit this: update project links, contact links, and current work details -->
+<!-- edit this: add your real project links, email, LinkedIn, and portfolio -->
+<!-- edit this: keep only the sections you want -->
 
-<div align="center">
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Manrope&weight=600&size=28&duration=3200&pause=1200&color=111111&center=true&vCenter=true&width=760&lines=Boby+%7C+Student+Developer;Building+clean+web+experiences+and+visual+stories" alt="Typing SVG" />
+</p>
 
-  <img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&weight=600&size=34&duration=3200&pause=1100&color=222222&center=true&vCenter=true&width=900&lines=Boby;Student+Developer+at+IIT+Jodhpur;Building+quiet%2C+thoughtful+things+for+the+web" alt="Typing SVG" />
+<p align="center">
+  <strong>B.Tech student at IIT Jodhpur focused on thoughtful web interfaces and visual storytelling.</strong><br />
+  I enjoy building with React, designing with intention, and shaping ideas through graphics and motion.
+</p>
 
-</div>
-
-<br />
-
-<table width="100%">
-  <tr>
-    <td valign="top" width="58%">
-
-## Boby
-
-<sub>Front-end focused student developer with an eye for composition, motion, and clarity.</sub>
-
-<br />
-
-I like building interfaces that feel simple at first glance and carefully designed underneath.  
-At IIT Jodhpur, I spend most of my time between **React**, **JavaScript**, visual design, and creative tools that help ideas look as good as they work.
-
-<br />
-
-<a href="https://github.com/YOUR_GITHUB_USERNAME">
-  <img src="https://img.shields.io/badge/GitHub-111111?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
-</a>
-<a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/">
-  <img src="https://img.shields.io/badge/LinkedIn-EAEAEA?style=flat-square&logo=linkedin&logoColor=111111&color=EAEAEA" alt="LinkedIn" />
-</a>
-<a href="mailto:your.email@example.com">
-  <img src="https://img.shields.io/badge/Email-F4F4F4?style=flat-square&logo=gmail&logoColor=111111&color=F4F4F4" alt="Email" />
-</a>
-<a href="https://your-portfolio-link.com">
-  <img src="https://img.shields.io/badge/Portfolio-F8F8F8?style=flat-square&logo=googlechrome&logoColor=111111&color=F8F8F8" alt="Portfolio" />
-</a>
-
-    </td>
-    <td valign="top" width="42%">
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&bg_color=00000000&title_color=111111&text_color=4A4A4A&icon_color=111111&ring_color=111111" alt="GitHub Stats" />
-</div>
-
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://img.shields.io/badge/IIT%20Jodhpur-B.Tech-f5f5f5?style=flat-square&labelColor=f5f5f5&color=f5f5f5" alt="IIT Jodhpur" />
+  <img src="https://img.shields.io/badge/Focus-Web%20Development-f5f5f5?style=flat-square&labelColor=f5f5f5&color=f5f5f5" alt="Web Development" />
+  <img src="https://img.shields.io/badge/Creative-Design%20%26%20Editing-f5f5f5?style=flat-square&labelColor=f5f5f5&color=f5f5f5" alt="Design and Editing" />
+</p>
 
 ---
 
 ## About Me
 
-I’m a **B.Tech student at IIT Jodhpur** exploring the space where engineering and aesthetics meet.
+I'm Boby, a student developer at **IIT Jodhpur** who likes making digital work feel clean, useful, and visually sharp.
 
-- I build responsive interfaces with **React, JavaScript, HTML, and CSS**
-- I enjoy shaping visuals through **graphic design and motion**
-- I work with **Photoshop, After Effects, and DaVinci Resolve**
-- I also experiment with **Arduino** when I want software to connect with something physical
+- Building front-end projects with **React, JavaScript, HTML, and CSS**
+- Interested in the overlap between **code, design, and motion**
+- Comfortable with **Arduino** for simple hardware-based projects
+- Also work with **Photoshop, After Effects, and DaVinci Resolve**
 
 ---
 
 ## Tech Stack
 
-<div align="center">
+### Development
+<p>
   <img src="https://skillicons.dev/icons?i=react,js,html,css,arduino&theme=light" alt="Development Skills" />
-</div>
+</p>
 
-<br />
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Photoshop-F2F2F2?style=flat-square&logo=adobephotoshop&logoColor=111111&color=F2F2F2" alt="Photoshop" />
-  <img src="https://img.shields.io/badge/After%20Effects-F6F6F6?style=flat-square&logo=adobeaftereffects&logoColor=111111&color=F6F6F6" alt="After Effects" />
-  <img src="https://img.shields.io/badge/DaVinci%20Resolve-EFEFEF?style=flat-square&logo=davinciresolve&logoColor=111111&color=EFEFEF" alt="DaVinci Resolve" />
-</div>
+### Creative Tools
+<p>
+  <img src="https://img.shields.io/badge/Photoshop-f5f5f5?style=flat-square&logo=adobephotoshop&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="Photoshop" />
+  <img src="https://img.shields.io/badge/After%20Effects-f5f5f5?style=flat-square&logo=adobeaftereffects&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="After Effects" />
+  <img src="https://img.shields.io/badge/DaVinci%20Resolve-f5f5f5?style=flat-square&logo=davinciresolve&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="DaVinci Resolve" />
+</p>
 
 ---
 
 ## Featured Projects
 
-<table width="100%">
-  <tr>
-    <td valign="top" width="33%">
+### [Project One](https://github.com/YOUR_GITHUB_USERNAME/project-one) <!-- edit this -->
+A clean and responsive project built around a strong front-end idea.  
+<!-- edit this: replace with a one-line description -->
 
-### [Project One](https://github.com/YOUR_GITHUB_USERNAME/project-one)
-<!-- edit this -->
-A polished front-end build focused on layout, responsiveness, and detail.
+**Stack:** `React` `JavaScript` `CSS` <!-- edit this -->
 
-`React` `JavaScript` `CSS`
+### [Project Two](https://github.com/YOUR_GITHUB_USERNAME/project-two) <!-- edit this -->
+A practical build that shows how you approach UI, logic, or interaction design.  
+<!-- edit this: replace with a one-line description -->
 
-    </td>
-    <td valign="top" width="33%">
+**Stack:** `HTML` `CSS` `JavaScript` <!-- edit this -->
 
-### [Project Two](https://github.com/YOUR_GITHUB_USERNAME/project-two)
-<!-- edit this -->
-A practical web project that shows how I think through interaction and structure.
+### [Project Three](https://github.com/YOUR_GITHUB_USERNAME/project-three) <!-- edit this -->
+A project that reflects your creative side, hardware experiments, or visual work.  
+<!-- edit this: replace with a one-line description -->
 
-`HTML` `CSS` `JavaScript`
-
-    </td>
-    <td valign="top" width="33%">
-
-### [Project Three](https://github.com/YOUR_GITHUB_USERNAME/project-three)
-<!-- edit this -->
-A creative or experimental project blending visuals, hardware, or motion.
-
-`Arduino` `Photoshop` `After Effects`
-
-    </td>
-  </tr>
-</table>
-
-<!-- edit this: replace the placeholder titles, descriptions, links, and stacks above -->
+**Stack:** `Arduino` `Photoshop` `After Effects` <!-- edit this -->
 
 ---
 
-## GitHub Snapshot
+## GitHub Stats
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&bg_color=00000000&title_color=111111&text_color=4A4A4A" height="160" alt="Top Languages" />
-</div>
+<p>
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&bg_color=ffffff00&title_color=111111&text_color=444444&icon_color=111111&ring_color=111111" width="48%" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&bg_color=ffffff00&title_color=111111&text_color=444444" width="36%" alt="Top Languages" />
+</p>
 
 ---
 
 ## Currently Learning / What I'm Building
 
-- Going deeper into **React** and more refined component-driven UI work
-- Improving the way I translate **visual taste into front-end implementation**
-- Building **<!-- edit this: add your current project or learning focus -->**
-- Exploring cleaner workflows across **design, motion, and editing**
+- Going deeper into **React** and cleaner component-driven UI development
+- Improving how I combine **design thinking** with front-end execution
+- Building **<!-- edit this: your current project, idea, or goal -->**
+- Exploring better workflows in **motion design and video editing**
 
 ---
 
 ## Reach Me
 
-<p align="center">
-  If you'd like to collaborate, talk design, or build something thoughtful for the web, I'm always open to a good conversation.
+<p>
+  <a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-f5f5f5?style=flat-square&logo=gmail&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/"><img src="https://img.shields.io/badge/LinkedIn-f5f5f5?style=flat-square&logo=linkedin&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="LinkedIn" /></a>
+  <a href="https://github.com/YOUR_GITHUB_USERNAME"><img src="https://img.shields.io/badge/GitHub-f5f5f5?style=flat-square&logo=github&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="GitHub" /></a>
+  <a href="https://your-portfolio-link.com"><img src="https://img.shields.io/badge/Portfolio-f5f5f5?style=flat-square&logo=googlechrome&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="Portfolio" /></a>
 </p>
 
-<p align="center">
-  <a href="mailto:your.email@example.com">your.email@example.com</a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/">LinkedIn</a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://github.com/YOUR_GITHUB_USERNAME">GitHub</a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://your-portfolio-link.com">Portfolio</a>
-</p>
-
-<!-- edit this: remove any link you do not want to show -->
+<!-- edit this: if you do not have a portfolio yet, remove that badge -->
+<!-- edit this: replace all placeholder links before publishing -->
