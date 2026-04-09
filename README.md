@@ -21,7 +21,7 @@
 
 ## About Me
 
-I'm Boby, a student developer at **IIT Jodhpur** who likes making digital work feel clean, useful, and visually sharp.
+I'm Boby, a student at **IIT Jodhpur** who likes making digital work feel clean, useful, and visually sharp.
 
 - Building front-end projects with **React, JavaScript, HTML, and CSS**
 - Interested in the overlap between **code, design, and motion**
@@ -44,38 +44,8 @@ I'm Boby, a student developer at **IIT Jodhpur** who likes making digital work f
   <img src="https://img.shields.io/badge/DaVinci%20Resolve-f5f5f5?style=flat-square&logo=davinciresolve&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="DaVinci Resolve" />
 </p>
 
----
 
-## Featured Projects
 
-### [Project One](https://github.com/YOUR_GITHUB_USERNAME/project-one) <!-- edit this -->
-A clean and responsive project built around a strong front-end idea.  
-<!-- edit this: replace with a one-line description -->
-
-**Stack:** `React` `JavaScript` `CSS` <!-- edit this -->
-
-### [Project Two](https://github.com/YOUR_GITHUB_USERNAME/project-two) <!-- edit this -->
-A practical build that shows how you approach UI, logic, or interaction design.  
-<!-- edit this: replace with a one-line description -->
-
-**Stack:** `HTML` `CSS` `JavaScript` <!-- edit this -->
-
-### [Project Three](https://github.com/YOUR_GITHUB_USERNAME/project-three) <!-- edit this -->
-A project that reflects your creative side, hardware experiments, or visual work.  
-<!-- edit this: replace with a one-line description -->
-
-**Stack:** `Arduino` `Photoshop` `After Effects` <!-- edit this -->
-
----
-
-## GitHub Stats
-
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&bg_color=ffffff00&title_color=111111&text_color=444444&icon_color=111111&ring_color=111111" width="48%" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&bg_color=ffffff00&title_color=111111&text_color=444444" width="36%" alt="Top Languages" />
-</p>
-
----
 
 ## Currently Learning / What I'm Building
 
