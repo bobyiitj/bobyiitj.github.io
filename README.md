@@ -59,8 +59,8 @@ I'm Boby, a student at **IIT Jodhpur** who likes making digital work feel clean,
 ## Reach Me
 
 <p>
-  <a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-f5f5f5?style=flat-square&logo=gmail&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/"><img src="https://img.shields.io/badge/LinkedIn-f5f5f5?style=flat-square&logo=linkedin&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="LinkedIn" /></a>
+  <a href="b25bb1009@iitj.ac.in"><img src="https://img.shields.io/badge/Email-f5f5f5?style=flat-square&logo=gmail&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/bobyxjoy"><img src="https://img.shields.io/badge/LinkedIn-f5f5f5?style=flat-square&logo=linkedin&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="LinkedIn" /></a>
   <a href="https://github.com/YOUR_GITHUB_USERNAME"><img src="https://img.shields.io/badge/GitHub-f5f5f5?style=flat-square&logo=github&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="GitHub" /></a>
   <a href="https://your-portfolio-link.com"><img src="https://img.shields.io/badge/Portfolio-f5f5f5?style=flat-square&logo=googlechrome&logoColor=111111&labelColor=f5f5f5&color=f5f5f5" alt="Portfolio" /></a>
 </p>
